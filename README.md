@@ -4,8 +4,8 @@ OpenClassrooms - dév JS react - projet 11 - Kasa
 
 ## showroom
 
-[Visiter le site](https://oc-p11-kasa.vercel.app/) — 
-déploiement automatique de la branche main Vercel
+~~[Visiter le site](https://oc-p11-kasa.vercel.app/) — 
+déploiement automatique de la branche main Vercel~~ (public access revoked)
 
 ## projet
 
