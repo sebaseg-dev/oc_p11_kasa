@@ -13,6 +13,7 @@ export function Collapse({title, isOpen, children}) {
     const childrenIsString = typeof(children)==="string";
 
     useEffect(() => {
+        console.log("useeffet")
         if (descriptionVisible){
             const contentHeight = pRef.current.scrollHeight + 24 + 16;
             contentRef.current.style.height = contentHeight + "px"
@@ -29,10 +30,10 @@ export function Collapse({title, isOpen, children}) {
         }
     }, [descriptionVisible])
 
-    useEffect(() => {
-        contentRef.current.style.transition = "none"
-        pRef.current.style.transition = "none"
-    }, [])
+    // useEffect(() => {
+    //     contentRef.current.style.transition = "none"
+    //     pRef.current.style.transition = "none"
+    // }, [])
 
     return <>
         <article className={"collapse " + (descriptionVisible ? "open" : "closed")}>
