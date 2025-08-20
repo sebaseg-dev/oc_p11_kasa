@@ -14,7 +14,7 @@ export function Carrousel({ pictures }) {
         });
     }, []);
 
-    // Défilement automatique
+    // Autoplay
     useEffect(() => {
         if (autoplay) {
             const interval = setInterval(() => {
