@@ -18,7 +18,7 @@ $footer-content_height: calc(
         #{$footer-bottomPadding_height}
 );
 $main-total_available-height: calc(
-    100vh - #{$header-total_height} - #{$footer-total_height} -
+    100vh - #{$header-total_height} - #{$footer-content_height} -
         #{$main-yMargin_height} * 2
 );
 
