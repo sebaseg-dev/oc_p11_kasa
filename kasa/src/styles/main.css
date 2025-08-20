@@ -127,7 +127,7 @@ table {
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
-  src: url("./fonts/Montserrat-VariableFont_wght.ttf"); }
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf"); }
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400; }
@@ -170,8 +170,8 @@ header {
       padding-right: calc((50vw - 864px)); } }
 
 main {
-  margin: 8px 96px;
-  min-height: calc( 100vh - calc( 48px * 2 + 64px ) - calc( 200px - 64px - 24px ) - 8px * 2 ); }
+  margin: 24px 96px;
+  min-height: calc( 100vh - calc( 48px * 2 + 64px ) - calc( 200px - 64px - 24px ) - 24px * 2 ); }
   @media screen and (max-width: 768px) {
     main {
       margin: 24px 16px;
