@@ -2,43 +2,122 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: none; }
 
 table {
@@ -46,11 +125,11 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
-  src: url("../scss/assets/Montserrat-VariableFont_wght.ttf"); }
+  src: url("../assets/Montserrat-VariableFont_wght.ttf"); }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400; }
 
 header {
@@ -87,20 +166,20 @@ header {
       padding: 16px 20px; } }
   @media screen and (min-width: 1920px) {
     header {
-      padding-left: calc( (50vw - 864px));
-      padding-right: calc( (50vw - 864px)); } }
+      padding-left: calc((50vw - 864px));
+      padding-right: calc((50vw - 864px)); } }
 
 main {
   margin: 8px 96px;
-  min-height: calc( 100vh - calc( 48px * 2 + 64px ) - 200px - 8px * 2); }
+  min-height: calc( 100vh - calc( 48px * 2 + 64px ) - 200px - 8px * 2 ); }
   @media screen and (max-width: 768px) {
     main {
       margin: 24px 16px;
-      min-height: calc( 100vh - calc( 16px * 2 + 48px ) - 200px - 24px * 2); } }
+      min-height: calc( 100vh - calc( 16px * 2 + 48px ) - 200px - 24px * 2 ); } }
   @media screen and (min-width: 1920px) {
     main {
-      padding-left: calc( (50vw - 960px));
-      padding-right: calc( (50vw - 960px)); } }
+      padding-left: calc((50vw - 960px));
+      padding-right: calc((50vw - 960px)); } }
 
 footer {
   background-color: #000000;
@@ -125,8 +204,8 @@ footer {
         text-align: center; } }
   @media screen and (min-width: 1920px) {
     footer {
-      padding-left: calc( (50vw - 960px));
-      padding-right: calc( (50vw - 960px)); } }
+      padding-left: calc((50vw - 960px));
+      padding-right: calc((50vw - 960px)); } }
 
 @keyframes slide-from-right {
   from {
@@ -208,7 +287,7 @@ footer {
 .collapse {
   position: relative; }
   .collapse > .title {
-    background-color: #FF6060;
+    background-color: #ff6060;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -268,7 +347,7 @@ footer {
     object-fit: cover;
     object-position: center; }
   .hero::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 100%;
@@ -310,7 +389,7 @@ footer {
   border-radius: 16px;
   overflow: hidden;
   position: relative;
-  background-color: #FF6060; }
+  background-color: #ff6060; }
   .card > img {
     width: 344px;
     height: 344px;
@@ -327,7 +406,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #0A0A0A00 0%, #0A0A0A00 42%, rgba(4, 4, 4, 0.41) 100%);
+    background: linear-gradient(to bottom, #0a0a0a00 0%, #0a0a0a00 42%, rgba(4, 4, 4, 0.41) 100%);
     z-index: 50;
     border-radius: 16px; }
   .card > p {
@@ -349,7 +428,7 @@ footer {
       height: 256px; } }
 
 .index > .housing {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 24px;
   padding: 56px;
   margin: 40px 0;
@@ -375,7 +454,7 @@ footer {
     flex-direction: column;
     gap: 24px; }
     .details .content .general-information .title h1 {
-      color: #FF6060;
+      color: #ff6060;
       font-size: 2.25rem;
       line-height: 150%; }
       @media screen and (max-width: 768px) {
@@ -392,7 +471,7 @@ footer {
       justify-content: flex-start;
       gap: 8px; }
     .details .content .general-information .title li {
-      background-color: #FF6060;
+      background-color: #ff6060;
       color: #ffffff;
       font-weight: 600;
       font-size: 0.875rem;
@@ -433,7 +512,7 @@ footer {
             height: 32px; } }
       .details .content .general-information .host-profile-name {
         font-size: 1.125rem;
-        color: #FF6060;
+        color: #ff6060;
         white-space: pre;
         text-align: right; }
         @media screen and (max-width: 768px) {
@@ -487,13 +566,13 @@ footer {
   .not-found > h1 {
     font-weight: 700;
     font-size: 18rem;
-    color: #FF6060; }
+    color: #ff6060; }
     @media screen and (max-width: 768px) {
       .not-found > h1 {
         font-size: 6rem; } }
   .not-found > p {
     font-size: 2.25rem;
-    color: #FF6060;
+    color: #ff6060;
     font-weight: 500;
     text-align: center; }
     @media screen and (max-width: 768px) {
