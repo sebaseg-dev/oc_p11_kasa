@@ -10,6 +10,7 @@ Objectifs pédagogiques:
 - Développer les routes d'une application web avec React Router
 - Initialiser une application web avec un framework
 
+
 Projet à développer sur la base d'une [maquette Figma](https://www.figma.com/design/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR?node-id=0-1) fournie avec Vite, React et React Router sans bibliothèque externe. Utilisation de Sass pour le style et les animations.
 
 [Live preview](https://oc-p11-kasa.vercel.app/) - site en version mockée hébergée sur Vercel
