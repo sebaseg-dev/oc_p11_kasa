@@ -1,73 +1,113 @@
-# OpenClassrooms - Projet 11 Kasa
+# OpenClassrooms – Project 11 Kasa
 
-## Description
+> [README en français](./README_FR.md)
 
-Code source du projet 11 - Développez une application Web avec React et React Router du parcours Développeur d'application JavaScrip React.
+## 📌 Description
 
-Objectifs pédagogiques:
+Source code of **Project 11 – Build a Web Application with React and React Router**, completed as part of the **OpenClassrooms JavaScript React Developer path**.
 
-- Créer des composants avec React
-- Développer les routes d'une application web avec React Router
-- Initialiser une application web avec un framework
+This project consisted of **implementing the front-end of a modern web application** for apartment rentals between individuals, using **React**, **React Router**, and **SASS**.
+The goal was to **translate Figma mockups into a functional application**, including CSS animations and multi-page routing.
 
+Planned pages:
 
-Projet à développer sur la base d'une [maquette Figma](https://www.figma.com/design/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR?node-id=0-1) fournie avec Vite, React et React Router sans bibliothèque externe. Utilisation de Sass pour le style et les animations.
+* Home page and apartment listings
+* Apartment detail page
+* Static pages: About, Contact
+* Modular components: Gallery, Collapse, Header, Footer
 
-[Live preview](https://oc-p11-kasa.vercel.app/) - site en version mockée hébergée sur Vercel
+⚠️ **Educational project:** This repository was created for learning purposes and is **not intended for production**.
 
-## Utilisation
+---
 
-Pour lancer l'application React, exécutez la commande suivante :
+## 🎯 Learning Objectives
 
-    npm run dev
+* Build components with **React**
+* Develop routes in a web application with **React Router**
+* Initialize and configure a modern web application with **Vite**
+* Integrate **CSS animations** and styles using **SASS**
+* Organize a front-end project according to mockups and UX/UI standards
 
-Cette commande utilisera Vite pour démarrer une application de développement
+---
 
-Pour compiler votre projet en production, utilisez la commande suivante :
+## 📦 Deliverables & Project Structure
 
-    npm run build
+* **Figma Mockups**: reference for responsive design and components
+* **React Components**: modular and reusable, located in `src/components/`
+* **Pages and Layout**: located in `src/pages/`, organized with a **global layout**
+* **React Router Routing**: handled in `src/Router.jsx`
+* **Mock Data**: JSON file used as the front-end data source
+* **CSS and SASS Animations**: included in `src/assets/styles/`
 
-Cette commande générera un dossier dist contenant les fichiers compilés.
+---
 
-## Architecture de l'application
+## 🏗 Application Architecture
 
-### 1. Point d'entrée
+### 1. Entry Point
 
-- `src/main.jsx` : initialise React et monte l’application dans le DOM via le router:
-- `src/Router.jsx` : contient la logique de routing de l'ensemble de l'application
+* `src/main.jsx`: initializes React and mounts the application
+* `src/Router.jsx`: defines routes and handles multi-page routing
 
-### 2. Structure des pages
+### 2. Page Structure
 
-Un layout (`src/pages/root.jsx`) organise la structure de base des pages, au sein duquel les pages son représentées en fonction de la logique de routing (autres éléments du répertoire `src/pages/`).
+* `src/pages/root.jsx`: global layout containing header, footer, and page rendering
+* `src/pages/`: main application pages
+* `src/components/`: reusable components (Gallery, Collapse, Header, Footer, etc.)
 
-Le répertoire `src/components/` contient des composants React, modulaires et réutilisables.
+---
 
-## 🛠️ Technologies utilisées
+## 🛠 Tools & Methodologies
 
-### 📦 Dépendances de production
+### 📦 Main Dependencies
 
-- React ^19.1.0
-- React DOM ^19.1.0
-- React Router DOM ^7.6.0
-- npm (gestionnaire de paquets Node.js)
+* react
+* react-dom
+* react-router-dom
 
-### 🛠️ Dépendances de développement
+### 🛠 Development Dependencies
 
-#### 🔧 Build & Plugins
+* vite
+* @vitejs/plugin-react
+* eslint + React plugins
+* prettier
+* @types/react
+* @types/react-dom
 
-- Vite ^6.3.5
-- @vitejs/plugin-react ^4.4.1
+### Other Tools
 
-#### ✨ Typages
+* **SASS** for styling and CSS animations
+* **Vite** for building and development environment
+* **Node.js** for dependency management and running JavaScript
 
-- @types/react ^19.1.2
-- @types/react-dom ^19.1.2
+---
 
-#### 🧹 Linting / Qualité de code
+## 🚀 Usage
 
-- ESLint ^9.25.0
-- @eslint/js ^9.25.0
-- eslint-plugin-react-hooks ^5.2.0
-- eslint-plugin-react-refresh ^0.4.19
-- globals ^16.0.0
-- Prettier 3.6.2
+To start the application in development mode:
+
+```bash
+npm install
+npm run dev
+```
+
+To build the application for production:
+
+```bash
+npm run build
+```
+
+The build will be generated in the `dist` folder.
+
+To preview the build:
+
+```bash
+npm run preview
+```
+
+---
+
+## ⚠️ Disclaimer
+
+This project is a **mocked front-end application** developed for learning purposes.
+It is not connected to a real back-end and **is not intended for production**.
+The goal is to demonstrate proficiency in **React, React Router, and SASS**, and the ability to translate a **Figma design into a functional web application**.
