@@ -16,7 +16,7 @@ export function useFetch(url, id) {
             })
             .catch((error) => setError(error))
             .finally(() => setLoading(false));
-    });
+    }, [id, url]);
 
     return [loading, data, error];
 }
